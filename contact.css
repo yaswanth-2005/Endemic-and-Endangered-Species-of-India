@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  #headd{
+    margin-left: 30px;
+    top: 20%;
+    
+  }
+  #headd span{
+    font-size: 30px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 120px auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 10;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.2s;
+
+  }
+  .contact-details span{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .contact-details:hover{
+    box-shadow: 0 0 10px green;
+    transform: scale(1.02);
+  }
+  h2 {
+    color: #333 
+  }
+  
+  p {
+    margin-bottom: 8px;
+  }
+  .complaint-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.2s;
+  }
+  .complaint-form:hover{
+    box-shadow: 0 0 10px green;
+    transform: scale(1.02);
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  #bt5{
+    margin-left: 50%;
+    padding: 20px;
+  }
+  button {
+    background-color: #333; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 10px black;
+  }
+  #head2{
+    margin-left: 20px;
+  }

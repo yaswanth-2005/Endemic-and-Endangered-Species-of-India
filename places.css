@@ -1,0 +1,108 @@
+.header{
+    width: 100%;
+}
+.header ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #333;
+    float: left;
+    font-size: 20px;
+  }
+  
+  .header ul li {
+    float: left;
+    padding: 10px;
+  }
+  
+  .header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .header ul li a:hover:not(.active) {
+    background-color: tomato;
+  }
+  .header ul li a:hover{
+      background-color: tomato;
+  }
+  .active {
+    background-color: #111;
+  }
+.row1{
+        display:flex;
+        width: 100%;
+        margin-left: 90px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:  20px;   
+}
+.row2{
+    display:flex;
+    width: 100%;
+    margin-left: 90px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom:  20px;
+}
+.row3{
+    display:flex;
+    width: 100%;
+    margin-left: 90px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom:  20px; 
+}
+body{
+    background-color: #f0f0f0;
+    margin: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.content h1{
+    font-family: Gill Sans, sans-serif;
+    color: black;
+    text-shadow: 0 0 1px black;
+    font-size: 50px;
+}
+.content h1 span{
+    font-size: 35px;
+}
+.content p,ul{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 5px;
+}
+
+.image img{
+    width: 70vh;
+    height:65vh;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px black);
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.image img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 5px #f0f0f0);
+
+}

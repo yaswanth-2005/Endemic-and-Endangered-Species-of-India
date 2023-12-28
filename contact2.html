@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Input Display</title>
+  <link rel="stylesheet" href="contact2.css">
+</head>
+<body>
+<h1>Register A Complaint</h1>
+<form id="userForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject" name="subject" required>
+
+  <label for="message">Your Complaint:</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <label for="image">Image:</label>
+  <input type="file" id="image" name="image" accept="image/*"><br>
+
+  <button type="button" id="button1" onclick="displayUserInput()">Submit&nbsp;&#8594;</button>
+</form>
+
+<div id="displayContent">
+</div>
+
+<script>
+  function displayUserInput() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var image = document.getElementById('image').files[0];
+    var subject = document.getElementById('subject').value;
+    var comp = document.getElementById('message').value;
+
+    var displayContent = '<p>Name: ' + name + '</p>';
+    displayContent += '<p>Email: ' + email + '</p>';
+    displayContent += '<p>Subject:'+subject +'</p>';
+    displayContent += '<p>comp:'+comp +'</p>'
+
+    if (image) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        displayContent += '<img src="' + e.target.result + '" alt="User Image">';
+        document.getElementById('displayContent').innerHTML = displayContent;
+      };
+      reader.readAsDataURL(image);
+    } else {
+      document.getElementById('displayContent').innerHTML = displayContent;
+    }
+  }
+</script>
+
+</body>
+</html>

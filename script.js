@@ -1,0 +1,9 @@
+document.getElementById("bt2").addEventListener("click",()=>{
+    window.location.href='endemic.html';
+});
+document.getElementById("bt1").addEventListener("click",()=>{
+    window.location.href='endangered.html';
+});
+document.getElementById("bt3").addEventListener("click",()=>{
+    window.location.href='places.html';
+});
